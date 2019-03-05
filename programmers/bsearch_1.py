@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*-
+
 import bisect
 
 def solution(budgets, M):
@@ -19,7 +21,6 @@ def solution(budgets, M):
         sum += budgets[i]
 
     upper_value = (M - sum)/(len(budgets)-idx)
-
     return int(upper_value)
 
 
